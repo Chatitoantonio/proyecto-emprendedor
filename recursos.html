@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recursos y Contacto | Welinton Sangama</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo logo-text">PROYECTO EMPRENDEDOR PERSONAL</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Página Principal</a></li>
+          <li><a href="retos.html">Retos y Oportunidades</a></li>
+          <li><a href="acciones.html">Acciones y Estrategias</a></li>
+          <li><a href="recursos.html" class="active">Recursos y Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Recursos y Contacto</h1>
+    <p>Herramientas que uso y cómo puedes ponerte en contacto conmigo.</p>
+  </section>
+
+  <!-- RECURSOS -->
+  <section class="recursos-section">
+    <div class="container">
+
+      <h2 class="section-title">Mis Herramientas</h2>
+      <p class="section-subtitle">El arsenal técnico con el que trabajo cada día.</p>
+
+      <div class="recursos-grid">
+
+        <div class="recurso-grupo">
+          <h3>🎬 Video y Edición</h3>
+          <ul class="recurso-lista">
+            <li>Adobe Premiere Pro</li>
+            <li>DaVinci Resolve</li>
+            <li>Adobe After Effects</li>
+            <li>CapCut Pro</li>
+          </ul>
+        </div>
+
+        <div class="recurso-grupo">
+          <h3>📷 Fotografía</h3>
+          <ul class="recurso-lista">
+            <li>Adobe Lightroom</li>
+            <li>Adobe Photoshop</li>
+            <li>Capture One</li>
+          </ul>
+        </div>
+
+        <div class="recurso-grupo">
+          <h3>🚁 Drones</h3>
+          <ul class="recurso-lista">
+            <li>DJI Mini / Air Series</li>
+            <li>DJI Fly App</li>
+            <li>Litchi (vuelos automatizados)</li>
+          </ul>
+        </div>
+
+        <div class="recurso-grupo">
+          <h3>✏️ Diseño e Ilustración</h3>
+          <ul class="recurso-lista">
+            <li>Adobe Illustrator</li>
+            <li>Adobe InDesign</li>
+            <li>Figma</li>
+            <li>Procreate</li>
+          </ul>
+        </div>
+
+        <div class="recurso-grupo">
+          <h3>📡 Transmisión TV</h3>
+          <ul class="recurso-lista">
+            <li>OBS Studio</li>
+            <li>vMix</li>
+            <li>Tricaster</li>
+          </ul>
+        </div>
+
+        <div class="recurso-grupo">
+          <h3>📚 Formación</h3>
+          <ul class="recurso-lista">
+            <li>Ingeniería Civil (Universidad)</li>
+            <li>Cursos Udemy / Domestika</li>
+            <li>YouTube Creators Academy</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <h2>Hablemos</h2>
+          <p>¿Tienes un proyecto audiovisual, necesitas un dronista profesional o quieres colaborar? Escríbeme.</p>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <span>Perú</span>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <span>welinton.sangama@email.com</span>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📱</div>
+            <span>Instagram · YouTube · LinkedIn</span>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <span>Disponible para proyectos freelance</span>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+            </div>
+            <div class="form-group">
+              <label for="asunto">Tipo de proyecto</label>
+              <select id="asunto" name="asunto" required>
+                <option value="" disabled selected>¿Qué necesitas?</option>
+                <option value="video">Producción de video</option>
+                <option value="dron">Servicio de dron</option>
+                <option value="foto">Fotografía</option>
+                <option value="diseno">Diseño / Ilustración</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Enviar mensaje</button>
+            <div class="form-message" id="formMessage" role="alert"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVEGACIÓN ENTRE PÁGINAS -->
+  <section class="nav-pages">
+    <div class="container nav-pages-grid">
+      <a href="acciones.html" class="nav-page-btn nav-page-btn--prev">
+        ← Acciones y Estrategias
+      </a>
+      <a href="index.html" class="nav-page-btn nav-page-btn--next">
+        Página Principal →
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Welinton Antonio Sangama Godoy. Todos los derechos reservados.</p>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="retos.html">Retos</a>
+        <a href="acciones.html">Acciones</a>
+        <a href="recursos.html">Recursos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
