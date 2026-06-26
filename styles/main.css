@@ -716,6 +716,144 @@ img {
   font-size: 1rem;
 }
 
+/* ===== CAUSAS Y CONSECUENCIAS ===== */
+.causas-section {
+  padding: 3rem 0 5rem;
+  background: var(--white);
+}
+
+.causas-bloque {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: flex-start;
+  padding: 3rem 0;
+  border-bottom: 1px solid #ebebf0;
+}
+
+.causas-bloque:last-child {
+  border-bottom: none;
+}
+
+.causas-imagen {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.causas-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.causas-imagen:hover img {
+  transform: scale(1.02);
+}
+
+.causas-texto h2 {
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  font-weight: 700;
+  color: #c0392b;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-family: Georgia, serif;
+}
+
+.causas-num {
+  display: block;
+  font-size: 0.9rem;
+  color: #c0392b;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.causas-titulo--verde {
+  color: #27ae60 !important;
+}
+
+.causas-texto p {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.causas-texto p strong {
+  color: #333;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .causas-bloque {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* ===== HABILIDAD A CORREGIR ===== */
+.hab-corregir-section {
+  padding: 5rem 0;
+  background: var(--white);
+  border-top: 1px solid #ebebf0;
+}
+
+.hab-corregir-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hab-corregir-imagen {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.hab-corregir-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.hab-corregir-imagen:hover img {
+  transform: scale(1.03);
+}
+
+.hab-corregir-texto h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: #c0392b;
+  margin-bottom: 1.25rem;
+  font-family: Georgia, serif;
+}
+
+.hab-corregir-texto p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.85;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hab-corregir-texto p strong {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hab-corregir-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 /* ===== NAVEGACIÓN ENTRE PÁGINAS ===== */
 .nav-pages {
   padding: 2.5rem 0;
@@ -763,8 +901,8 @@ img {
   position: relative;
   min-height: 200px;
   background:
-    linear-gradient(rgba(20,20,20,0.48), rgba(20,20,20,0.55)),
-    url('images/vistanoche.png') center center / cover no-repeat;
+    linear-gradient(rgba(10,10,30,0.45), rgba(10,10,30,0.45)),
+    url('images/nocheestrellada.jpg') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -795,6 +933,7 @@ img {
 /* ===== ACCIONES MAIN ===== */
 .acciones-main {
   padding: 4rem 0 5rem;
+  position: relative;
   background: var(--white);
 }
 
