@@ -519,6 +519,36 @@ img {
   }
 }
 
+/* ===== EXTRAS AUTOLIDERAZGO ===== */
+.auto-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #e8e8f0;
+  padding-top: 1.25rem;
+}
+
+.auto-extra-item h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.auto-extra-item p {
+  font-size: 0.85rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+@media (max-width: 600px) {
+  .auto-extra {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ===== HABILIDADES ===== */
 .habilidades-section {
   padding: 5rem 0;
