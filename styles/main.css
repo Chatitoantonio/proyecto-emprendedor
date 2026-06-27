@@ -896,6 +896,55 @@ img {
   transform: translateX(3px);
 }
 
+/* ===== VIDEO CANVA PERSONAL ===== */
+.video-section {
+  padding: 5rem 0;
+  background: var(--white);
+  border-top: 1px solid #ebebf0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.video-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.15);
+  background: #000;
+}
+
+.video-wrap video {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.video-texto h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: #2eaacc;
+  margin-bottom: 1.25rem;
+  font-family: Georgia, serif;
+}
+
+.video-texto p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 /* ===== ACCIONES HERO ===== */
 .acciones-hero {
   position: relative;
